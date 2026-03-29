@@ -1,0 +1,20 @@
+Installing missing packages: rms, survminer, cmprsk, tidycmprsk, dcurves, pec, mice, tableone, kableExtra, gtsummary, patchwork, viridis, ggrepel 
+also installing the dependencies ‘fracdiff’, ‘lmtest’, ‘urca’, ‘tensorA’, ‘distributional’, ‘bdsmatrix’, ‘ucminf’, ‘AsioHeaders’, ‘Deriv’, ‘forecast’, ‘microbenchmark’, ‘fontBitstreamVera’, ‘fontLiberation’, ‘matrixStats’, ‘posterior’, ‘corrplot’, ‘bbmle’, ‘fastGHQuad’, ‘lsoda’, ‘libcoin’, ‘ordinal’, ‘rbibutils’, ‘gtools’, ‘websocket’, ‘V8’, ‘reactR’, ‘doBy’, ‘fontquiver’, ‘clock’, ‘gower’, ‘ipred’, ‘timeDate’, ‘wk’, ‘Formula’, ‘MatrixModels’, ‘mvtnorm’, ‘TH.data’, ‘sandwich’, ‘checkmate’, ‘lazyeval’, ‘crosstalk’, ‘coda’, ‘MLEcens’, ‘RcppEigen’, ‘loo’, ‘BH’, ‘RcppParallel’, ‘StanHeaders’, ‘ggsci’, ‘cowplot’, ‘ggsignif’, ‘polynom’, ‘rstatix’, ‘exactRankTests’, ‘gridtext’, ‘assertthat’, ‘deSolve’, ‘mstate’, ‘muhaz’, ‘numDeriv’, ‘quadprog’, ‘rstpm2’, ‘statmod’, ‘litedown’, ‘sparsevctrs’, ‘rex’, ‘hunspell’, ‘diagram’, ‘iterators’, ‘doParallel’, ‘mets’, ‘plotrix’, ‘Publish’, ‘RcppArmadillo’, ‘future.apply’, ‘progressr’, ‘SQUAREM’, ‘modeltools’, ‘strucchange’, ‘coin’, ‘shape’, ‘jomo’, ‘globals’, ‘listenv’, ‘Rcereal’, ‘Rdpack’, ‘minqa’, ‘nloptr’, ‘reformulas’, ‘mitools’, ‘inline’, ‘QuickJSR’, ‘proxy’, ‘gdata’, ‘plyr’, ‘chromote’, ‘bigD’, ‘bitops’, ‘juicyjuice’, ‘reactable’, ‘carData’, ‘abind’, ‘pbkrtest’, ‘bayestestR’, ‘performance’, ‘datawizard’, ‘estimability’, ‘gdtools’, ‘modelenv’, ‘recipes’, ‘xts’, ‘beeswarm’, ‘vipor’, ‘jpeg’, ‘classInt’, ‘s2’, ‘units’, ‘Hmisc’, ‘quantreg’, ‘SparseM’, ‘polspline’, ‘multcomp’, ‘htmlTable’, ‘colorspace’, ‘plotly’, ‘icenReg’, ‘rmsb’, ‘VGAM’, ‘ggpubr’, ‘gridExtra’, ‘maxstat’, ‘ggtext’, ‘flexsurv’, ‘markdown’, ‘hardhat’, ‘aod’, ‘broom.helpers’, ‘cardx’, ‘covr’, ‘ggsurvfit’, ‘spelling’, ‘prodlim’, ‘foreach’, ‘riskRegression’, ‘lava’, ‘timereg’, ‘party’, ‘glmnet’, ‘mitml’, ‘broom.mixed’, ‘future’, ‘furrr’, ‘literanger’, ‘lme4’, ‘miceadds’, ‘pan’, ‘parallelly’, ‘ranger’, ‘randomForest’, ‘rstan’, ‘survey’, ‘e1071’, ‘zoo’, ‘gmodels’, ‘labelled’, ‘Matching’, ‘reshape2’, ‘geepack’, ‘lmerTest’, ‘svglite’, ‘magick’, ‘formattable’, ‘sparkline’, ‘webshot2’, ‘cards’, ‘gt’, ‘car’, ‘effectsize’, ‘emmeans’, ‘flextable’, ‘ggstats’, ‘huxtable’, ‘insight’, ‘officer’, ‘openxlsx’, ‘parameters’, ‘parsnip’, ‘smd’, ‘workflows’, ‘gridGraphics’, ‘vdiffr’, ‘png’, ‘hexbin’, ‘dichromat’, ‘mapproj’, ‘maps’, ‘terra’, ‘ggpp’, ‘prettydoc’, ‘ggbeeswarm’, ‘marquee’, ‘rsvg’, ‘sf’
+
+
+Warning message in install.packages(missing, repos = "https://cloud.r-project.org", :
+“installation of package ‘magick’ had non-zero exit status”
+Warning message in install.packages(missing, repos = "https://cloud.r-project.org", :
+“installation of package ‘rsvg’ had non-zero exit status”
+Warning message in install.packages(missing, repos = "https://cloud.r-project.org", :
+“installation of package ‘rmsb’ had non-zero exit status”
+All packages loaded successfully.
+
+==============================================================================
+  CONFIG LOADED SUCCESSFULLY
+  Node-positive filter:  LN_positive 
+  LNR cutpoints (Rosenberg):  0.05 / 0.2 
+  TLE adequacy threshold:  12 
+  Bootstrap replicates:  1000 
+  Random seed:  2024 
+============================================================================== 

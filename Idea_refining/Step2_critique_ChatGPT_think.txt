@@ -1,0 +1,34 @@
+Overall, this is a strong and unusually well thought-out protocol: it is pre-specified, it avoids stepwise variable selection, it anticipates missingness and overfitting, and it correctly treats several analysis choices as sensitivity analyses rather than primary claims. Those are real strengths, and they make the plan much more defensible than a typical retrospective survival study. 
+
+The main statistical weaknesses are these:
+
+1. **The estimand is still a bit blurred.**
+   The plan alternates between a *prognostic* question (“does LNR predict survival better?”) and a *prediction-model* question (“does LNR improve discrimination/reclassification?”). Those are related but not identical. If the aim is staging relevance, the protocol should state explicitly whether the primary endpoint is **incremental predictive performance** beyond current N-stage, or **independent association** with outcome. Right now it tries to do both, which weakens interpretability. 
+
+2. **Too much emphasis on categorical LNR cutpoints.**
+   Fixed thresholds are useful for translation, but they are statistically lossy and can be unstable across cohorts. The plan already recognizes this, but it still places categories at the center of the analysis. A stronger primary strategy would be to model LNR **continuously**, ideally with restricted cubic splines, and keep cutpoints as a secondary presentation layer. Otherwise you risk turning a smooth prognostic signal into an artifact of arbitrary bins. 
+
+3. **The comparison models are not fully symmetric.**
+   N-stage and LNR are not interchangeable variables: LNR is mathematically tied to positive nodes and total nodes examined, while N-stage is an ordinal staging construct. The proposed adjustment for total lymph node count is sensible, but it also risks “adjusting away” some of the exact mechanism by which LNR is supposed to add value. The cleanest framing is: compare N-stage vs LNR **with and without** TLE adjustment, and interpret the TLE-adjusted model as incremental value beyond harvest adequacy, not as the sole truth. 
+
+4. **The model may be over-parameterized for a retrospective cohort.**
+   The protocol lists many covariates, subgroup analyses, interaction terms, and multiple performance metrics, but it does not yet give a concrete event-based sample size target. “EPV” language is helpful, but not sufficient by itself. You need a hard minimum number of events for the primary model, and that number should be based on the full model complexity, not just on a rule of thumb. As written, the study could easily become underpowered for interaction testing and model comparison even if the cohort size looks respectable. 
+
+5. **Some endpoints need more careful survival-method handling.**
+   DFS and cancer-specific survival in colorectal cancer are vulnerable to competing risks and misclassification of cause of death. Standard Cox methods are acceptable for overall survival, but for recurrence and cause-specific endpoints you should consider competing-risk methods as a sensitivity analysis, especially if death from non-cancer causes is nontrivial. Otherwise the secondary endpoints may look cleaner than they really are. 
+
+6. **Reclassification metrics are over-promoted relative to their reliability.**
+   NRI and IDI are often unstable, especially when risk categories are arbitrary or the sample is modest. They can look impressive while adding little clinical value. For a staging paper, calibration and decision-curve analysis are usually more persuasive than NRI alone. In other words: keep NRI as secondary, not as a centerpiece. 
+
+7. **The time structure of treatment is not fully resolved.**
+   The plan is right to worry about immortal time bias for adjuvant chemotherapy, but it still leaves a gap: if timing is unavailable, simply including chemotherapy as a baseline yes/no covariate may bias the model. In that case, it is safer to treat chemotherapy as a descriptive or sensitivity variable rather than a forced covariate in the main OS model. 
+
+8. **Calendar-time and institutional drift are likely confounders.**
+   The 2008–2022 accrual window spans major changes in pathology practice, chemotherapy regimens, surgical technique, and even follow-up intensity. That secular variation can affect both TLE and survival. The current plan does not explicitly adjust for calendar period, and if multi-site recruitment is used, clustering by center/pathologist/surgeon should be considered. Without that, temporal and institutional effects may masquerade as LNR effects. 
+
+9. **The exclusion criteria may induce selection bias.**
+   Excluding patients lost to follow-up within 12 months is risky because early attrition is often informative and rarely random. If a valid last-contact date exists, those patients should usually be censored rather than excluded. Likewise, “incomplete histopathological reporting” is a data-quality issue, but it should be quantified because excluding such cases can systematically bias the sample toward better-resourced pathology workflows. 
+
+What the plan does very well is give you a strong scaffold: pre-specification, internal validation by bootstrap, multiple imputation, avoidance of stepwise selection, and explicit sensitivity analyses. To use those strengths to the maximum, I would tighten the protocol around one primary estimand, make continuous LNR the main analysis, reduce reliance on NRI, add calibration/decision-curve endpoints, and predefine a hard event target before any modeling begins. 
+
+My bottom-line assessment: **scientifically promising, methodologically serious, but currently a little too ambitious for a single retrospective cohort unless the sample size and event count are strong enough to support the full model stack.**

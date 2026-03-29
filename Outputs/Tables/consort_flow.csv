@@ -1,0 +1,7 @@
+"Step","N_remaining","N_excluded"
+"1. Total records in database",137,NA
+"2. Excluded: invalid LN (positive > total)",137,0
+"3. Excluded: missing survival data",137,0
+"4. Excluded: node-negative patients",62,75
+"5. Excluded: missing/zero TLE",62,0
+"Final analytic cohort",62,NA

@@ -1,0 +1,117 @@
+==============================================================================
+  SCRIPT 08: CANCER-SPECIFIC SURVIVAL ANALYSIS
+==============================================================================
+
+Analytic cohort: N = 62 
+
+==============================================================================
+  CSS DATA COMPLETENESS CHECK
+==============================================================================
+
+Total deaths (OS events): 34 
+Cancer-specific deaths (DSS events): 24 
+Non-cancer deaths: 10 
+Alive/censored: 28 
+
+Cause-of-death data completeness: 100 %
+>>> CSS analysis PERMITTED (>= 85% threshold MET) <<<
+
+
+==============================================================================
+  COMPETING RISKS FRAMEWORK
+==============================================================================
+
+Competing risks event distribution:
+Status
+ 0  1  2 
+28 24 10 
+  0 = Alive/censored, 1 = Cancer death, 2 = Non-cancer death
+
+
+==============================================================================
+  CUMULATIVE INCIDENCE FUNCTIONS
+==============================================================================
+
+━━━ CIF by N-Stage ━━━
+       stat         pv df
+1 5.7758558 0.01624781  1
+2 0.1391876 0.70909001  1
+Warning message in text.default(x, y, ...):
+“for 'N1 — Cancer' in 'mbcsToSbcs': - substituted for — (U+2014)”
+Warning message in text.default(x, y, ...):
+“for 'N1 — Other' in 'mbcsToSbcs': - substituted for — (U+2014)”
+Warning message in text.default(x, y, ...):
+“for 'N2 — Cancer' in 'mbcsToSbcs': - substituted for — (U+2014)”
+Warning message in text.default(x, y, ...):
+“for 'N2 — Other' in 'mbcsToSbcs': - substituted for — (U+2014)”
+Saved: Fig_CIF_CSS_by_Nstage
+
+━━━ CIF by LNR Tier ━━━
+      stat        pv df
+1 0.941436 0.6245537  2
+2 1.476593 0.4779274  2
+Saved: Fig_CIF_CSS_by_LNR_tier
+
+==============================================================================
+  FINE-GRAY SUBDISTRIBUTION HAZARD MODELS
+==============================================================================
+
+━━━ Fine-Gray: N-stage for CSS ━━━
+Coefficients:
+Competing Risks Regression
+
+Call:
+cmprsk::crr(ftime = df$Time_survival, fstatus = df$cr_status, 
+    cov1 = cov_nstage, failcode = 1, cencode = 0)
+
+           coef exp(coef) se(coef)    z p-value
+N_stageN2 0.973      2.64    0.401 2.42   0.015
+
+          exp(coef) exp(-coef) 2.5% 97.5%
+N_stageN2      2.64      0.378  1.2  5.81
+
+Num. cases = 62
+Pseudo Log-likelihood = -89.8 
+Pseudo likelihood ratio test = 5.44  on 1 df,
+
+━━━ Fine-Gray: LNR continuous for CSS ━━━
+Coefficients:
+Competing Risks Regression
+
+Call:
+cmprsk::crr(ftime = df$Time_survival, fstatus = df$cr_status, 
+    cov1 = cov_lnr, failcode = 1, cencode = 0)
+
+          coef exp(coef) se(coef)   z p-value
+LNR_prop 0.574      1.78    0.522 1.1    0.27
+
+         exp(coef) exp(-coef)  2.5% 97.5%
+LNR_prop      1.78      0.563 0.639  4.94
+
+Num. cases = 62
+Pseudo Log-likelihood = -92 
+Pseudo likelihood ratio test = 1.01  on 1 df,
+
+━━━ Fine-Gray: LNR tiers for CSS ━━━
+Coefficients:
+Competing Risks Regression
+
+Call:
+cmprsk::crr(ftime = df$Time_survival, fstatus = df$cr_status, 
+    cov1 = cov_lnr_tier, failcode = 1, cencode = 0)
+
+                                  coef exp(coef) se(coef)     z p-value
+LNR_tierIntermediate (0.05-0.20) 0.553      1.74    0.676 0.818    0.41
+LNR_tierHigh (>0.20)             0.708      2.03    0.681 1.040    0.30
+
+                                 exp(coef) exp(-coef)  2.5% 97.5%
+LNR_tierIntermediate (0.05-0.20)      1.74      0.575 0.462  6.53
+LNR_tierHigh (>0.20)                  2.03      0.493 0.535  7.71
+
+Num. cases = 62
+Pseudo Log-likelihood = -92 
+Pseudo likelihood ratio test = 0.99  on 2 df,
+
+ ============================================================================== 
+  SCRIPT 08 COMPLETE
+============================================================================== 

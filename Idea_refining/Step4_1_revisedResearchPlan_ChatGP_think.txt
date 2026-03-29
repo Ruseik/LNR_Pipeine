@@ -1,0 +1,244 @@
+Below is a fully rewritten version of the research protocol, aligned with the critical revisions already identified. It keeps the strongest elements of the original plan—pre-specification, internal validation, and the South Asian context—while tightening the estimand, reducing overreliance on arbitrary cutpoints, and strengthening the statistical structure. 
+
+# Title
+
+**Prognostic value of lymph node ratio versus AJCC 8th edition N-stage in node-positive colorectal adenocarcinoma: a retrospective cohort study from Sri Lanka**
+
+# Background and Rationale
+
+Accurate nodal staging is central to colorectal cancer prognostication and treatment allocation. The current AJCC N-stage classifies patients by the number of positive lymph nodes, but it does not account for the total number of nodes examined. This can be problematic in settings where lymph node harvest is variable. The lymph node ratio (LNR), defined as the proportion of positive lymph nodes among all examined nodes, may capture prognostic information beyond N-stage, particularly in real-world pathology environments where nodal yield is inconsistent. 
+
+This study is designed to test whether LNR improves prediction of overall survival beyond established clinicopathological factors and conventional N-stage in a South Asian cohort. The study also aims to quantify how lymph node harvest patterns in this setting influence the performance of nodal staging systems. The emphasis is therefore not only biological but also translational: whether LNR adds enough clinically meaningful information to justify consideration in future staging discussions. 
+
+# Research Question
+
+In adults with histologically confirmed, node-positive colorectal adenocarcinoma treated with curative-intent surgery, does LNR provide better prognostic performance for overall survival than AJCC 8th edition N-stage, after accounting for key clinicopathological factors and lymph node yield? 
+
+# Primary Estimand
+
+The primary estimand is **incremental predictive performance**: whether a model containing LNR improves discrimination and clinical utility for overall survival compared with a model containing N-stage and standard covariates. The independent association of LNR with survival is a secondary estimand. This distinction is essential because staging systems are prediction tools, not merely association tables. 
+
+# Objectives
+
+## Primary objective
+
+To compare the prognostic performance of LNR and AJCC N-stage for overall survival in node-positive colorectal cancer.
+
+## Secondary objectives
+
+1. To assess whether LNR remains independently associated with survival after adjustment for clinicopathological covariates.
+2. To evaluate whether LNR improves model discrimination, calibration, and decision utility relative to N-stage.
+3. To examine whether the prognostic advantage of LNR is greater among patients with inadequate lymph node harvest.
+4. To describe lymph node harvest patterns and their determinants in this Sri Lankan cohort. 
+
+# Hypotheses
+
+**Primary hypothesis:** A prognostic model containing LNR will outperform a comparable model containing N-stage in predicting overall survival.
+
+**Secondary hypotheses:**
+
+1. LNR will remain independently associated with poorer survival after adjustment for standard covariates.
+2. The predictive advantage of LNR will be more pronounced when lymph node harvest is low.
+3. LNR-based categorisation will reclassify a clinically meaningful subset of patients compared with N-stage. 
+
+# Study Design
+
+This will be a retrospective cohort study using prospectively maintained institutional surgical and pathology records. The study should be conducted at one or more tertiary referral centres in Sri Lanka with colorectal cancer surgical services. If multi-site data are available, centre-level clustering will be accounted for in the analysis. 
+
+# Study Period
+
+Eligible patients will be identified over a defined accrual window, ideally spanning 10–15 years, with sufficient follow-up to capture survival events. The exact years should be fixed before data extraction begins. 
+
+# Eligibility Criteria
+
+## Inclusion criteria
+
+* Age 18 years or older at surgery
+* Histologically confirmed colorectal adenocarcinoma
+* Node-positive disease on pathology
+* Curative-intent resection
+* Available surgery date, pathology report, and follow-up data sufficient to determine survival status
+
+## Exclusion criteria
+
+* Synchronous distant metastatic disease at the time of surgery
+* Prior colorectal malignancy
+* Hereditary colorectal cancer syndromes with atypical nodal biology
+* Palliative resection
+* Records lacking a valid surgery date or last-contact/death date
+* Cases in which LNR cannot be computed because total lymph node examination is entirely unrecorded will be excluded from LNR-based analyses but described explicitly rather than silently omitted. Patients with valid follow-up dates should not be excluded merely because follow-up is short; they should be censored at last contact. 
+
+# Exposure Definitions
+
+## Primary exposure: Lymph node ratio
+
+LNR will be calculated as:
+
+**LNR = number of positive lymph nodes / total number of examined lymph nodes**
+
+For the main analysis, LNR will be treated as a **continuous variable** using restricted cubic splines to preserve information and allow non-linear relationships with outcome.
+
+## Secondary exposure: LNR categories
+
+For descriptive and comparative purposes, LNR will also be grouped into clinically interpretable categories using pre-specified thresholds, such as:
+
+* Low
+* Intermediate
+* High
+
+These categories will be presented as secondary summaries rather than the primary analytic form. Data-driven cutpoint discovery will be treated as exploratory only.
+
+## Comparator exposure: AJCC 8th edition N-stage
+
+N-stage will be analysed in its standard categories, such as N1a, N1b, N1c, N2a, and N2b, depending on the available data structure. 
+
+# Outcomes
+
+## Primary outcome
+
+**Overall survival (OS)**, defined as time from surgery to death from any cause, with censoring at last known alive date.
+
+## Secondary outcomes
+
+* **Disease-free survival (DFS)**, defined as time to recurrence or death
+* **Cancer-specific survival (CSS)**, if cause-of-death data are sufficiently reliable
+* **Lymph node harvest adequacy**, described by total lymph node examined count and the proportion below adequacy thresholds. 
+
+# Covariates
+
+The following covariates will be entered into multivariable models based on clinical relevance, not on univariable screening:
+
+* Age
+* Sex
+* Tumour site (colon vs rectum)
+* T-stage
+* Histological grade
+* Lymphovascular invasion
+* Perineural invasion
+* Resection margin status
+* Total lymph nodes examined
+* Adjuvant chemotherapy
+* Calendar period of surgery
+
+If multiple centres contribute data, centre will be included as a clustering term or random effect as appropriate. 
+
+# Statistical Analysis Plan
+
+## 1. Descriptive analysis
+
+Patient characteristics will be summarised using means and standard deviations, medians and interquartile ranges, or counts and percentages as appropriate. The distribution of total lymph node examined, positive node count, LNR, and N-stage will be described in detail. Particular attention will be paid to the proportion of cases with low nodal harvest, since this is central to the biological premise of the study. 
+
+## 2. Primary modelling approach
+
+The primary analysis will compare prognostic models for overall survival in three layers:
+
+**Layer 1: Unadjusted comparison**
+
+* Model A: N-stage only
+* Model B: LNR only
+
+**Layer 2: Harvest-adjusted comparison**
+
+* Model A + total lymph node examined
+* Model B + total lymph node examined
+
+**Layer 3: Fully adjusted comparison**
+
+* Model A + all prespecified covariates
+* Model B + all prespecified covariates
+
+This layered approach separates the intrinsic prognostic signal from the effect of lymph node harvest and then evaluates the realistic clinical model. 
+
+## 3. Functional form of LNR and TLE
+
+LNR and total lymph node examined will be modelled continuously using restricted cubic splines if sample size permits. If sample size is limited, simpler parametric forms will be used, but categorisation will remain secondary. This preserves prognostic information and avoids unnecessary thresholding. 
+
+## 4. Model estimation
+
+Overall survival will be analysed using Cox proportional hazards regression. Proportional hazards assumptions will be assessed using Schoenfeld residuals and visual inspection of time-varying effects. If violations are detected, time-interaction terms or stratified modelling will be used. 
+
+## 5. Model performance
+
+Model comparison will focus on the following:
+
+* **Uno’s C-statistic** as the primary discrimination metric
+* **Harrell’s C-statistic** as a supportive measure
+* **Calibration plots**, calibration slope, and calibration-in-the-large
+* **AIC and BIC** for relative model fit
+* **Decision-curve analysis** for clinical utility
+
+Net reclassification improvement and integrated discrimination improvement will be reported only as secondary exploratory measures, not as central evidence. 
+
+## 6. Internal validation
+
+Optimism-corrected performance estimates will be obtained using bootstrap resampling, preferably with a large number of iterations. This will avoid the inefficiency of splitting the dataset into training and test subsets and will provide a more stable estimate of out-of-sample performance. 
+
+## 7. Reclassification analysis
+
+A cross-tabulation of N-stage versus LNR categories will be produced to show how many patients move to different prognostic tiers under LNR. Survival within each reclassification cell will be examined descriptively to determine whether the LNR-defined tier better matches observed outcomes than the original N-stage group. 
+
+## 8. Subgroup analyses
+
+Pre-specified subgroup analyses will evaluate whether LNR performs better than N-stage in:
+
+* Patients with low lymph node harvest versus adequate harvest
+* Colon versus rectal cancers
+* Early versus locally advanced T-stage
+* Patients who did versus did not receive adjuvant chemotherapy
+
+The low-harvest subgroup is the most biologically important, because that is where LNR is most likely to add value. Interaction terms will be used to formally test effect modification rather than relying only on separate subgroup estimates. 
+
+## 9. Sensitivity analyses
+
+Sensitivity analyses will include:
+
+* Complete-case analysis versus multiply imputed analysis
+* Exclusion of N1c cases, where appropriate, because of staging complexity
+* Alternative LNR category thresholds
+* Landmark analysis for early postoperative deaths
+* Competing-risk methods for DFS and CSS, if those outcomes are retained and the necessary data are available 
+
+# Handling of Missing Data
+
+Missing covariate data will be handled using multiple imputation by chained equations when missingness is non-trivial and plausibly missing at random. The imputation model will include outcome information and all variables used in the analysis. If a variable has extensive missingness, its use in the primary model will be reconsidered, but this decision will be documented a priori. 
+
+# Sample Size and Event Considerations
+
+The final model complexity will be constrained by the number of observed events. Because this is a retrospective survival study, the analysis must be governed by the available event count rather than by nominal cohort size alone. If event numbers are modest, the model will be simplified accordingly, and subgroup interaction tests will be treated cautiously. A pre-specified event-count framework should be established before modelling begins. 
+
+# Bias Control
+
+Key biases and safeguards include:
+
+* **Selection bias:** retain and censor patients with valid follow-up dates rather than excluding them unnecessarily
+* **Immortal time bias:** treat adjuvant chemotherapy as time-varying if timing data are available
+* **Temporal drift:** include calendar period in the model
+* **Institutional heterogeneity:** account for centre-level clustering if multiple sites contribute data
+* **Overfitting:** use bootstrap validation and avoid stepwise selection 
+
+# Reporting Standards
+
+The study will be reported according to:
+
+* **STROBE** for observational studies
+* **TRIPOD** for prognostic modelling
+
+The manuscript should include a clear patient flow diagram, full model specification, performance metrics with confidence intervals, and transparent reporting of missing data and exclusions. 
+
+# Ethical Considerations
+
+The study will require institutional ethics approval. As a retrospective analysis using existing records, waiver of individual consent may be appropriate depending on local regulatory requirements. Patient confidentiality will be preserved through de-identification of all extracted records. 
+
+# Expected Contribution
+
+This study will provide three outputs of value:
+
+1. A direct comparison of LNR and AJCC N-stage for prognostic performance
+2. A context-specific description of lymph node harvest adequacy in a South Asian colorectal cancer cohort
+3. Evidence that may inform future staging discussions by showing whether LNR adds clinically meaningful value in a setting where nodal yield is often variable. 
+
+# Concise Summary
+
+In this revised protocol, LNR is treated as a continuous prognostic marker, N-stage remains the comparator, and the primary question is whether LNR improves predictive performance for overall survival beyond established clinicopathological factors. The study is designed to be transparent, internally validated, and robust to the main biases of retrospective survival research. 
+
+If you want, I can turn this into a journal-style **full protocol manuscript** with sections formatted as **Abstract, Introduction, Methods, and Statistical Analysis**.

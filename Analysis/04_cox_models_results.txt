@@ -1,0 +1,9 @@
+A total of 62 patients were included in the analytic cohort, among whom 34 deaths occurred during follow-up. According to the prespecified event-based analytic framework, the dataset was classified as Tier 1 (inadequate; <80 events), and therefore only unadjusted Cox proportional hazards models were performed. Multivariable adjustment, restricted cubic spline modelling, and interaction testing were not undertaken because they were not permitted at this analytic tier.
+
+In the unadjusted Cox proportional hazards analysis, N-stage showed a borderline association with overall survival. Patients with N2 disease had a significantly higher hazard of death than those with N1 disease (β = 0.6797, HR = 1.97, 95% CI approximately 1.00–3.81; Wald p = 0.0496). The model was modestly discriminative, with a likelihood ratio chi-square of 3.69 (p = 0.0547), score chi-square of 4.00 (p = 0.0454), and Dxy of 0.172.
+
+By contrast, lymph node ratio (LNR), analysed as a continuous linear covariate, was not associated with overall survival (β = 0.3460, HR = 1.41, 95% CI approximately 0.55–3.62; Wald p = 0.4724). The LNR model showed no evidence of prognostic discrimination, with a likelihood ratio chi-square of 0.49 (p = 0.4825), score chi-square of 0.52, and Dxy of 0.092.
+
+Model comparison metrics favoured the N-stage model over the LNR model. The N-stage model had a lower Akaike information criterion (AIC, 249.4 vs 252.6), a lower Bayesian information criterion (BIC, 251.5 vs 254.7), and a higher log-likelihood (−123.71 vs −125.31), indicating superior relative model fit.
+
+Proportional hazards assumptions were satisfied for both models based on Schoenfeld residual testing. There was no evidence of violation for N-stage (global p = 0.41) or LNR (global p = 0.41), supporting the validity of the Cox model assumptions in this cohort.

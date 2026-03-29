@@ -1,0 +1,11 @@
+"Analysis","Subgroup","N","Events","C_statistic","SE"
+"TLE adequacy subgroup","N-stage | Inadequate (<12)",16,13,0.4958,0.0776
+"TLE adequacy subgroup","LNR | Inadequate (<12)",16,13,0.3644,0.0829
+"TLE adequacy subgroup","N-stage | Adequate (>=12)",46,21,0.3875,0.0521
+"TLE adequacy subgroup","LNR | Adequate (>=12)",46,21,0.4412,0.069
+"T-stage subgroup","N-stage | T3/T4",53,30,0.423,0.0467
+"T-stage subgroup","LNR | T3/T4",53,30,0.447,0.0575
+"N-stage subgroup","LNR | N1",41,19,0.4478,0.0681
+"N-stage subgroup","LNR | N2",21,15,0.515,0.0679
+"6-month landmark","N-stage (landmark)",51,25,0.4461,0.0488
+"6-month landmark","LNR (landmark)",51,25,0.481,0.0623

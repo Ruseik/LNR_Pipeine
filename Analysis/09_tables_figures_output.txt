@@ -1,0 +1,165 @@
+==============================================================================
+  SCRIPT 09: TABLES & FIGURES COMPILATION
+==============================================================================
+
+
+==============================================================================
+  FIGURE 1: CONSORT FLOW
+==============================================================================
+
+CONSORT-Style Patient Flow Diagram
+===================================
+
+Total records in database: 137
+  └─ Excluded (invalid LN data): 0
+  └─ Excluded (missing survival): 0
+  └─ Excluded (node-negative): 75
+     (Filter: LN_positive)
+  └─ Excluded (TLE missing/zero): 0
+  ────────────────────
+  FINAL ANALYTIC COHORT: 62
+  OS events: 34
+  DSS events: 24
+  Analytic tier: Inadequate (< 80 events)
+
+==============================================================================
+  TABLE 2: MULTIVARIABLE COX MODEL RESULTS
+==============================================================================
+
+
+==============================================================================
+  TABLE 3: C-STATISTIC COMPARISON
+==============================================================================
+
+Table 3: C-Statistic Comparison
+           Layer Model   C-statistic (95% CI) ΔC (LNR - N-stage)
+1 1 (Unadjusted)     A 0.4248 (0.3418–0.5078)                 NA
+2 1 (Unadjusted)     B 0.4667 (0.3637–0.5698)             0.0419
+Saved: Table3_C_statistic_comparison .csv
+
+==============================================================================
+  TABLE 4: RECLASSIFICATION
+==============================================================================
+
+N-Stage × LNR Tier Cross-Tabulation:
+     
+      Low (<0.05) Intermediate (0.05-0.20) High (>0.20) Sum
+  N1            7                       27            7  41
+  N2            0                        2           19  21
+  Sum           7                       29           26  62
+Saved: Table4_reclassification .csv
+
+==============================================================================
+  COMPOSITE FIGURES
+==============================================================================
+
+Saved: Fig_composite_KM_OS (combined N-stage + LNR tier)
+
+==============================================================================
+  COMPREHENSIVE RESULTS SUMMARY
+==============================================================================
+
+═══════════════════════════════════════════════════════════
+  LNR vs N-Stage Prognostic Comparison — Key Findings
+═══════════════════════════════════════════════════════════
+
+Study Population:
+  Analytic cohort: N = 62 node-positive CRC patients
+  Node-positive filter: LN_positive 
+  OS events: 34 
+  DSS events: 24 
+  Analytic tier: Inadequate (< 80 events) 
+
+TLE Characterisation (South Asian contextual data):
+  Median TLE: 15 nodes
+  TLE < 12 (AJCC minimum): 25.8 %
+  TLE < 8 (stringent): 12.9 %
+
+LNR Distribution:
+  Median LNR: 0.133 
+  LNR tier distribution:
+
+             Low (<0.05) Intermediate (0.05-0.20)             High (>0.20) 
+                       7                       29                       26 
+
+C-Statistic Summary:
+  Model A: C = 0.4248
+  Model B: C = 0.4667
+
+═══════════════════════════════════════════════════════════
+
+==============================================================================
+  OUTPUT FILE INVENTORY
+==============================================================================
+
+Tables:
+   all_subgroup_sensitivity_results.csv 
+   C_statistic_all_models.csv 
+   consort_flow.csv 
+   Figure1_CONSORT_flow.txt 
+   LNR_tier_distribution.csv 
+   missingness_summary.csv 
+   model_comparison_summary.csv 
+   Nstage_LNRtier_crosstab.csv 
+   reclassification_cell_summary.csv 
+   reclassification_table_full.csv 
+   RMST_reclassification_cells.csv 
+   sensitivity_landmark_6mo.csv 
+   sensitivity_LNR_cutpoints_comparison.csv 
+   subgroup_N_stage.csv 
+   subgroup_T_stage.csv 
+   subgroup_TLE_adequacy.csv 
+   Table1_by_LNR_tier.csv 
+   Table1_by_N_stage.csv 
+   Table3_C_statistic_comparison.csv 
+   Table4_reclassification.csv 
+   univariate_cox_results.csv 
+
+Figures:
+   Fig_C_statistic_comparison.pdf 
+   Fig_C_statistic_comparison.png 
+   Fig_CIF_CSS_by_LNR_tier.pdf 
+   Fig_CIF_CSS_by_Nstage.pdf 
+   Fig_composite_KM_OS.pdf 
+   Fig_KM_DSS_by_LNR_tier.pdf 
+   Fig_KM_DSS_by_LNR_tier.png 
+   Fig_KM_DSS_by_Nstage.pdf 
+   Fig_KM_DSS_by_Nstage.png 
+   Fig_KM_landmark_6mo.pdf 
+   Fig_KM_LNR_TLE_Adequate12.pdf 
+   Fig_KM_LNR_TLE_Inadequate12.pdf 
+   Fig_KM_OS_by_LNR_tier.pdf 
+   Fig_KM_OS_by_LNR_tier.png 
+   Fig_KM_OS_by_Nstage.pdf 
+   Fig_KM_OS_by_Nstage.png 
+   Fig_KM_reclassification_cells.pdf 
+   Fig_KM_reclassification_cells.png 
+   Fig_LNR_dose_response_martingale.pdf 
+   Fig_LNR_dose_response_martingale.png 
+   Fig_LNR_histogram.pdf 
+   Fig_LNR_histogram.png 
+   Fig_reclassification_heatmap.pdf 
+   Fig_reclassification_heatmap.png 
+   Fig_TLE_by_LNR_tier.pdf 
+   Fig_TLE_by_LNR_tier.png 
+   Fig_TLE_by_Nstage.pdf 
+   Fig_TLE_by_Nstage.png 
+   Fig_TLE_histogram.pdf 
+   Fig_TLE_histogram.png 
+
+Models:
+   phase_css_competing_risks.RData 
+   phase2_unadjusted_results.RData 
+   phase3_cox_models.RData 
+   phase3_performance_metrics.RData 
+   phase4_reclassification.RData 
+   phase5_subgroup_sensitivity.RData 
+
+Appendix:
+   Fig_KM_LNR_binary_020.pdf 
+
+ ============================================================================== 
+  SCRIPT 09 COMPLETE — ALL OUTPUTS COMPILED
+  Total tables: 21 
+  Total figures: 30 
+============================================================================== 

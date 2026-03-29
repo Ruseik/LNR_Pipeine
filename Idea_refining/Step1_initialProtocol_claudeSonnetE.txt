@@ -1,0 +1,154 @@
+## Research Intent Analysis
+
+The brief contains three nested layers of intent. The **scientific** layer asks whether LNR outperforms N-stage as a prognostic tool in node-positive CRC. The **contextual** layer acknowledges that this question has particular salience in South Asia, where lymph node harvest adequacy is likely more variable. The **translational** layer positions findings as a potential contribution to AJCC, RCPath, and ASCO — meaning the methodology must meet the evidentiary standards those bodies require.
+
+The central tension the study must resolve: *N-stage ignores the denominator. Two patients with N2a disease (4 positive nodes) are staged identically regardless of whether 5 or 25 nodes were examined. LNR accounts for harvest adequacy — but is that correction prognostically meaningful enough to warrant routine reporting?*
+
+---
+
+## Primary Research Question
+
+**In adult patients with histologically confirmed node-positive colorectal adenocarcinoma undergoing curative-intent surgical resection, does the lymph node ratio (LNR — defined as the number of tumour-positive lymph nodes divided by the total number of nodes examined) provide superior prognostic discrimination for overall survival compared to AJCC 8th edition N-stage classification, and does LNR retain independent prognostic value after adjusting for established clinicopathological covariates including total lymph nodes examined?**
+
+---
+
+## Hypothesis Framework---
+
+## Specific Objectives (Aligned to General Objective)
+
+The general objective is to rigorously evaluate whether LNR represents a superior prognostic metric compared to TNM N-stage in node-positive CRC, with reference to the South Asian context. The following specific objectives collectively deliver on this.
+
+**SO1.** Determine the optimal LNR cutpoints for prognostic stratification in this population using pre-specified literature-anchored thresholds and data-driven validation.
+
+**SO2.** Compare the prognostic performance of LNR categorical groups versus AJCC N-stage subcategories for OS and DFS using Harrell's C-statistic, AIC, and net reclassification improvement (NRI).
+
+**SO3.** Quantify the independent prognostic contribution of LNR for OS in a multivariable Cox proportional hazards model adjusting for T-stage, tumour grade, lymphovascular invasion (LVI), perineural invasion (PNI), resection margin, adjuvant chemotherapy receipt, and total lymph nodes examined (TLE).
+
+**SO4.** Evaluate the degree to which LNR reclassifies patients relative to conventional N-stage, with particular attention to patients who are N1/N2 discordant under LNR stratification.
+
+**SO5.** Examine in a stratified subgroup analysis whether the prognostic advantage of LNR over N-stage is specifically amplified in patients with inadequate lymph node harvest (TLE < 12), which is the mechanistic premise of the LNR hypothesis.
+
+**SO6.** Characterise the distribution of TLE and its association with pathological factors and outcomes in this South Asian cohort, providing contextual data directly relevant to AJCC discussions.
+
+---
+
+## Study Design
+
+Retrospective cohort study using prospectively maintained institutional surgical and histopathology records.
+
+**Setting:** Tertiary referral centre(s) with colorectal surgical oncology services in Sri Lanka. Multi-site recruitment should be pursued if single-site data yields insufficient events within the required follow-up window.
+
+**Study period:** A 10–15 year case accrual window (e.g. 2008–2022) with minimum 24-month follow-up from index surgery, enabling adequate event accumulation for survival modelling.
+
+**Eligibility criteria:**
+
+*Inclusion:* Histologically confirmed colorectal adenocarcinoma; node-positive disease (≥1 positive lymph node on histopathology); curative-intent resection (R0 or R1); age ≥18 years at surgery; complete clinicopathological and follow-up data.
+
+*Exclusion:* Synchronous distant metastases at resection (M1 disease — these are not the staging question); prior colorectal malignancy; hereditary CRC syndromes with atypical LN biology (Lynch syndrome, FAP); palliative resections; incomplete histopathological reporting (no total node count); loss to follow-up within 12 months of surgery with no death event recorded.
+
+**Exposure variables:** LNR (continuous, and categorical at pre-specified thresholds: Low LNR < 0.05, Intermediate 0.05–0.20, High > 0.20, with sensitivity analysis at 0.05/0.40 threshold, which is the most cited in the literature from Rosenberg 2008 and subsequent validation). N-stage per AJCC 8th edition (N1a, N1b, N1c, N2a, N2b) as the comparator.
+
+**Primary outcome:** Overall survival (OS) — time from date of surgery to death from any cause, with censoring at last known alive date.
+
+**Secondary outcomes:** Disease-free survival (DFS) — time to recurrence (locoregional or distant) or death; Cancer-specific survival (CSS) — death attributable to CRC.
+
+---
+
+## Sample Size and Power Calculations
+
+This is the critical section for a resource-limited setting. The approach uses the **events per variable (EPV) framework** with pre-specified power targets.---
+
+## Analytic Plan
+
+The analysis proceeds in five sequential phases, each linked to a specific objective.
+
+### Phase 1 — Data Preparation and Descriptive Statistics
+
+Compute LNR for each patient as positive nodes ÷ total nodes examined (TLE). Characterise the distribution of LNR (continuous), TLE, and N-stage subcategories. Examine TLE distribution carefully — in South Asian institutional data, TLE < 12 nodes is likely more prevalent than in Western series, which is precisely the population where LNR has the greatest theoretical advantage and where the South Asian context adds evidentiary value. Report median TLE with IQR and the proportion with TLE < 12. This contextual data alone is a contribution to the literature.
+
+Apply pre-specified LNR thresholds from the landmark Rosenberg 2008 paper: **Low (< 0.05), Intermediate (0.05–0.20), High (> 0.20)** as the primary categorisation. A sensitivity analysis will additionally test the 0.05/0.40 tri-tier system and an alternative 0.20 single-cutpoint binary system. The rationale for anchoring cutpoints to literature rather than deriving data-driven cutpoints as the primary analysis is that data-driven cutpoints inflate Type I error and are not generalisable — they cannot be presented to AJCC as evidence for a universal threshold. X-tile or recursive partitioning should be used as an exploratory secondary analysis only, with explicit acknowledgement of the multiple comparisons issue.
+
+### Phase 2 — Unadjusted Survival Analysis (Linked to SO1, SO2)
+
+Kaplan-Meier curves for: (a) N-stage subcategories (N1a/b/c vs N2a/b), (b) LNR tiers (Low/Intermediate/High). Log-rank test with Bonferroni correction for multiple groups. The visual separation of KM curves, particularly whether LNR creates clean non-overlapping strata within N1 and N2 subgroups, is a key qualitative result. A survival table at 1, 3, and 5 years for each group should accompany the curves.
+
+### Phase 3 — Prognostic Model Construction and Comparison (Linked to SO2, SO3)
+
+Build four Cox proportional hazards models for primary outcome (OS):
+
+**Model A** — N-stage only (reference model, replicating current clinical practice).
+
+**Model B** — LNR categories only (the candidate model).
+
+**Model C** — Multivariable model with N-stage plus pre-specified clinicopathological covariates: age (continuous), sex, tumour site (colon vs rectum), T-stage (T1/2 vs T3 vs T4), tumour grade (well/moderate vs poor/undifferentiated), LVI (yes/no), PNI (yes/no), resection margin (R0 vs R1), TLE (continuous, or dichotomised at 12 as a secondary approach), and adjuvant chemotherapy (yes/no, treated as a time-dependent covariate to avoid immortal time bias if data allows, or excluded from primary OS model and included in DFS model only if timing cannot be ascertained).
+
+**Model D** — Multivariable model with LNR categories replacing N-stage (all other covariates identical to Model C).
+
+Test the proportional hazards assumption for all variables using Schoenfeld residuals and scaled Schoenfeld residual plots. For variables violating PH assumption, use stratification or time-interaction terms.
+
+**Discrimination comparison:** Harrell's C-statistic computed for Models A vs B and Models C vs D. Use the Uno C-statistic as a more robust alternative to Harrell's C (less sensitive to censoring patterns). Compare C-statistics using DeLong-type bootstrap confidence intervals. A clinically meaningful difference is pre-defined as ΔC ≥ 0.05 (pre-specified, not post-hoc). Report AIC and BIC for all models — smaller values indicate better fit.
+
+**Reclassification analysis:** Net Reclassification Improvement (NRI) for binary outcome (dead vs alive at 5 years) and Integrated Discrimination Improvement (IDI). These metrics quantify how many patients are moved to a better or worse risk category by replacing N-stage with LNR. Continuous NRI (without arbitrary risk categories) is preferred given the modest sample size.
+
+### Phase 4 — Reclassification Analysis (Linked to SO4)
+
+Produce a reclassification table crossing N-stage categories (N1/N2) against LNR categories (Low/Intermediate/High). Identify the proportion of patients who are "reclassified" — i.e. assigned to a different risk tier under LNR than under N-stage. Critically, test whether the reclassified patients have survival outcomes that match their new LNR-assigned tier better than their original N-stage tier. This is the clinical validation of reclassification — a patient moved from N1 to LNR-Intermediate should have outcomes resembling the Intermediate LNR group, not the N1 group.
+
+### Phase 5 — Subgroup and Sensitivity Analyses (Linked to SO5, SO6)
+
+**Pre-specified subgroups:** (i) TLE < 12 vs ≥ 12 nodes — the mechanistic subgroup of primary interest; (ii) colon vs rectum (different biological behaviour and different standard-of-care adjuvant treatment); (iii) T3/T4 vs T1/T2 disease; (iv) receipt of adjuvant chemotherapy (yes/no). For each subgroup, compute LNR C-statistic and N-stage C-statistic and assess whether the LNR advantage is amplified within TLE < 12 stratum using a formal interaction test (LNR × TLE adequacy interaction term in the Cox model). Interaction p < 0.10 considered evidence of effect modification (more lenient threshold is appropriate given reduced power in subgroups).
+
+**Sensitivity analyses:** (i) Complete case analysis vs multiple imputation results (assesses impact of missing data); (ii) Per-protocol exclusion of N1c patients (tumour deposits without regional LN metastasis — these have LNR = 0 by definition yet are node-positive by N-stage, which is a known anomaly that could confound comparison); (iii) Landmark analysis at 6 months post-surgery (removes early deaths potentially due to surgical morbidity rather than tumour biology).
+
+---
+
+## Statistical Analysis Plan Overview---
+
+## Covariate Selection and Rationale
+
+The selection of covariates for multivariable adjustment is pre-specified and theory-driven, not stepwise. Stepwise selection should not be used — it is sample-size dependent, inflates apparent significance, and produces models that do not replicate. The following covariates are entered as a forced block in all multivariable models, irrespective of univariable p-value.
+
+**TLE (total lymph nodes examined)** is the single most important covariate. It is the mechanistic confounder in this study — it determines the denominator of LNR, and it is associated with surgical quality, specimen handling, and pathological diligence. If TLE is not adjusted for, the comparison between LNR and N-stage is confounded from the outset. TLE should be included as a continuous term with assessment for non-linearity using restricted cubic splines (3 knots), or dichotomised at 12 (the AJCC minimum adequacy threshold) if the sample size is insufficient for continuous modelling.
+
+**Adjuvant chemotherapy** presents the classic time-varying confounding problem. Patients who receive chemotherapy tend to be younger and fitter, but chemotherapy itself changes survival. If chemotherapy timing data is available, treat as a time-dependent covariate in the Cox model. If only receipt (yes/no) is available without timing, either exclude from the primary OS model and include in DFS analysis, or adjust as a fixed covariate with explicit acknowledgement of the potential for immortal time bias.
+
+**Resection margin (R0 vs R1)** is a strong independent prognostic factor. Even in a curative-intent cohort, R1 disease will be present and must be adjusted for; failure to do so will confound the N-stage/LNR comparison in rectal cancer patients where CRM positivity is most likely.
+
+---
+
+## Methodological Safeguards Against Limited Sample Size
+
+Several specific protections are warranted given the likely sample constraints of a South Asian single-centre study.
+
+**Penalised Cox regression (LASSO or Ridge):** If the EPV falls below 10 for any covariate, apply LASSO-penalised Cox regression using cross-validated penalty selection. This shrinks regression coefficients toward zero, preventing overfitting without variable elimination. LASSO selects variables implicitly; Ridge retains all covariates with shrinkage — Ridge is preferred here because all covariates are pre-specified on theoretical grounds and elimination would introduce selection bias.
+
+**Bootstrap internal validation:** Rather than splitting the data into training/test sets (which wastes data), use .632+ bootstrap resampling across 1000 iterations to estimate the optimism in C-statistic. Report optimism-corrected C-statistics as the primary discrimination estimate. This is the Harrell-style validation framework used in the TRIPOD reporting guidelines, which is the standard for prognostic model publications and is what AJCC reviewers will expect.
+
+**Missing data strategy:** Identify all variables with missingness >5%. If missingness exceeds this threshold for any key covariate (LVI, PNI, and grade are commonly incompletely recorded in retrospective South Asian datasets), use multiple imputation by chained equations (MICE) with m ≥ 20 imputed datasets. The imputation model must include the outcome variable (survival time and event indicator) to preserve the outcome-predictor association. Report complete case analysis in the sensitivity analysis for comparison. If missingness exceeds 30% for a variable, consider its exclusion from the primary model with explicit discussion of the resulting limitation.
+
+**Pre-registration:** Register the study protocol, analytic plan, and pre-specified hypotheses on ISRCTN or Open Science Framework before data extraction begins. This is essential for credibility when approaching AJCC/ASCO — unregistered retrospective studies with positive LNR findings are routinely dismissed as post-hoc analyses. Registration elevates the evidentiary weight substantially.
+
+---
+
+## Reporting Standards and Dissemination Strategy
+
+Adhere to **STROBE** (Strengthening the Reporting of Observational Studies in Epidemiology) and **TRIPOD** (Transparent Reporting of a multivariable prediction model for Individual Prognosis or Diagnosis) checklists — both should be completed and submitted as supplementary material.
+
+For the **South Asian contextual contribution**, include a dedicated section in the results reporting: (i) median TLE in this cohort versus published Western benchmarks, (ii) proportion with TLE < 12 and its determinants, and (iii) the specific magnitude of the LNR advantage in the TLE < 12 subgroup. This is the novel contextual contribution that no Western dataset can provide, and it directly addresses the equity dimension of staging systems that are calibrated on Western pathology practice.
+
+The findings, whether positive or negative for the LNR hypothesis, should be framed as a contribution to the AJCC 9th edition preparatory evidence base. Negative findings (LNR not superior) are equally valuable — they validate the robustness of N-stage even in settings with variable lymph node harvest. A concise 1–2 page summary of findings, framed as a proposal for consideration, can be submitted to the AJCC Colorectal Cancer Expert Panel through their public comment process, and separately to the RCPath Dataset Working Group for colorectal cancer, who are the relevant body for pathology reporting standards in Commonwealth countries including Sri Lanka.
+
+---
+
+## Summary Table of Objectives, Methods, and Outputs
+
+| Specific Objective | Primary Method | Key Output | Linked Hypothesis |
+|---|---|---|---|
+| SO1: Optimal LNR cutpoints | Literature-anchored thresholds + X-tile (exploratory) | Validated LNR tiers for this cohort | — |
+| SO2: LNR vs N-stage discrimination | Uno C-statistic, AIC/BIC, NRI | ΔC-statistic with 95% CI | H₁ (primary) |
+| SO3: Independent prognostic value | Multivariable Cox (Model D) | HR with 95% CI per LNR tier | H₃ |
+| SO4: Reclassification | Reclassification table, continuous NRI | % reclassified, survival by reclassification cell | H₂ |
+| SO5: LNR advantage in TLE < 12 | Subgroup Cox + interaction test | Interaction p-value, subgroup ΔC-statistic | H₄ |
+| SO6: South Asian TLE characterisation | Descriptive statistics, regression for TLE determinants | Contextual data for international reporting | Translational |
+
+This protocol is designed to produce findings that are methodologically defensible to a high-impact surgical oncology journal and scientifically credible to staging committees. The key discipline throughout is resisting the temptation to let the data drive the analysis — every cutpoint, every covariate, every subgroup must be locked in the statistical analysis plan before a single patient record is opened.

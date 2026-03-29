@@ -1,0 +1,7 @@
+"N_Stage","LNR_Tier","Count","Mortality_rate"
+"N1","Low (<0.05)",7,57.1
+"N2","Low (<0.05)",0,NA
+"N1","Intermediate (0.05-0.20)",27,48.1
+"N2","Intermediate (0.05-0.20)",2,100
+"N1","High (>0.20)",7,28.6
+"N2","High (>0.20)",19,68.4

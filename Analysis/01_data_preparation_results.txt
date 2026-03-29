@@ -1,0 +1,11 @@
+A total of 137 patients were identified from the database and included in the initial screening cohort. No duplicate patient identifiers or data integrity violations were detected, and there were no inconsistencies between recorded and recomputed lymph node ratio (LNR) values. All key variables were complete, with no missing data observed; therefore, complete-case analysis was performed.
+
+After exclusion of patients without lymph node positivity, 62 patients with node-positive colorectal cancer constituted the final analytic cohort, while 75 node-negative patients were excluded. No additional exclusions were required for missing survival data or inadequate lymph node evaluation for LNR computation.
+
+Within the analytic cohort (N = 62), the distribution of LNR categories showed 7 patients (11.3%) in the low LNR group (<0.05), 29 patients (46.8%) in the intermediate group (0.05–0.20), and 26 patients (41.9%) in the high LNR group (>0.20). According to TNM nodal staging, 41 patients (66.1%) were classified as N1 and 21 patients (33.9%) as N2.
+
+Tumor T-stage distribution demonstrated that the majority of patients had T3 disease (n = 42, 67.7%), followed by T4 (n = 11, 17.7%) and T1/T2 tumors (n = 9, 14.5%). Adequate lymph node yield (≥12 nodes examined) was achieved in 46 patients (74.2%), while 16 patients (25.8%) had inadequate nodal harvest.
+
+Most tumors were low grade (n = 55, 88.7%), with a smaller proportion classified as high grade (n = 7, 11.3%). Lymphovascular invasion was present in 29 patients (46.8%) and absent in 33 patients (53.2%). The cohort comprised 43 females (69.4%) and 19 males (30.6%).
+
+During a median follow-up of 1058 days (2.9 years), there were 34 overall survival events (54.8%) and 24 disease-specific survival events (38.7%). Based on the total number of events, the study was categorized within a low-event analytic tier (<80 events), restricting the analysis to Kaplan–Meier survival estimation, log-rank testing, and univariate Cox proportional hazards modeling without multivariable adjustment.
