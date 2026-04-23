@@ -23,6 +23,7 @@ Outputs/**
 !**/.gitkeep
 
 # Common excludes
+Analysis/ram.txt
 .Rhistory
 .RData
 .Ruserdata
