@@ -1,0 +1,29 @@
+# Ignore everything by default
+*
+
+# Allow directories to be traversed
+!*/
+
+# Allow specific file types (R scripts and basic text files)
+!*.R
+!*.txt
+!*.md
+!.gitignore
+!*.gitkeep
+
+# Ignore everything inside output directories
+Analysis/Outputs/**
+Outputs/**
+
+# Un-ignore the directories themselves so we can see .gitkeep inside them
+!Analysis/Outputs/**/
+!Outputs/**/
+
+# Allow .gitkeep files everywhere
+!**/.gitkeep
+
+# Common excludes
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store

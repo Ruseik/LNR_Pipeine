@@ -1,5 +1,0 @@
-"Subgroup","N","Events","C_statistic","SE"
-"N-stage | Inadequate (<12)",16,13,0.4958,0.0776
-"LNR | Inadequate (<12)",16,13,0.3644,0.0829
-"N-stage | Adequate (>=12)",46,21,0.3875,0.0521
-"LNR | Adequate (>=12)",46,21,0.4412,0.069
